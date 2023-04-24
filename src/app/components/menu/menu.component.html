@@ -1,0 +1,17 @@
+<div class="h-12 bg-black/[.85] absolute top-0 w-full">
+  <div class="container mx-auto">
+    <div class="flex h-12">
+      <a
+        *ngFor="let tab of tabs"
+        class="menu-item {{
+          activeTab === tab.name ? 'active-menu-item' : ''
+        }}"
+        href="#"
+        (click)="handleActiveTab(tab)"
+      >
+        <span>{{ tab.name }}</span>
+        <div [style.backgroundColor]="activeTab === tab.name ? (activeColor | async) : null"></div>
+      </a>
+    </div>
+  </div>
+</div>

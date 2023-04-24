@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@angular/cdk/overlay-prebuilt.css';
+
+@layer components {
+  .button-green {
+    @apply text-white text-sm font-medium p-1 w-16 rounded-sm text-center;
+    &.big {
+      @apply w-72 p-3 text-lg font-bold
+    }
+    &:disabled {
+      @apply bg-gray-200
+    }
+  }
+  
+  .button-white {
+    @apply bg-white text-sm font-medium p-1 w-16 rounded-sm
+  }
+  
+  .menu-item {
+    @apply w-1/5 flex flex-col;
+    span {
+      @apply grow flex items-center justify-center text-gray-400 text-sm font-medium;
+    }
+    div {
+      @apply h-1
+    }
+  
+    &.active-menu-item {
+      span {
+        @apply text-white;
+      }
+    }
+  
+  }
+}
+

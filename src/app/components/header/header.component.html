@@ -1,0 +1,9 @@
+<div class="bg-black">
+  <div class="container mx-auto">
+    <div class="p-4 bg-black flex items-center">
+      <img class="h-6 mr-auto" src="assets/Betway_White.webp" alt="Betway Logo">
+      <button #signInButton (click)="openSignInDialog()" class="button-green mr-2" [style.backgroundColor]="activeColor | async">Login</button>
+      <button #signUpButton (click)="openSignUpDialog()" class="button-white" [style.color]="activeColor | async">Sign Up</button>
+    </div>
+  </div>
+</div>

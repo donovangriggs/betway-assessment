@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://fn-uks-dev-eng-fe-mock-svc.azurewebsites.net",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {"^/api" : ""}
+    }
+  }

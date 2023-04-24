@@ -67,12 +67,14 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          
           "configurations": {
             "production": {
-              "browserTarget": "betway:build:production"
+              "browserTarget": "betway:build:production",
             },
             "development": {
-              "browserTarget": "betway:build:development"
+              "browserTarget": "betway:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
